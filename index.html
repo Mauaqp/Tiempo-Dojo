@@ -13,7 +13,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hola</h1>
+    <!--Header-->
+    <div class="header">
+        <div class="title">
+            <h1>DojoWeather</h1>
+        </div>
+        <div class="cities">
+            <ul>
+                <li onclick="cityAlert()">Burbank</li>
+                <li onclick="cityAlert()">Chicago</li>
+                <li onclick="cityAlert()">Dallas</li>
+            </ul>
+        </div>
+    </div>
+    <!--Location-->
+    <div class="location">
+        <div>
+            <h2>San Jose</h2>
+        </div>
+        <div class="displayTemp">
+            <div>Show Temperature in </div>
+            <div>
+                <select onchange='tempChange(this)'>
+                    <option value="0">C°</option>
+                    <option value="1">F°</option>
+                </select>
+            </div>
+        </div>   
+    </div>
+    <hr class="line">
+    <!--Box Container-->
+    <div class="box-container">
+    <!--Box 1-->
+        <div class="box">
+            <h3>Today</h3>
+            <img src="assets/some_rain.png" alt="imagen-clima"/>
+            <p>some rain</p>
+            <div class="tempatures">
+                <div class="highT" id="temp1">24</div>
+                <div class="lowT" id="temp2">18</div>
+            </div>
+        </div>
+    <!--Box 2-->
+    <div class="box">
+        <h3>Tomorrow</h3>
+        <img src="assets/some_sun.png" alt="imagen-clima"/>
+        <p>some sun</p>
+        <div class="tempatures">
+            <div class="highT" id="temp3">27</div>
+            <div class="lowT" id="temp4">19</div>
+        </div>
+    </div>
+    <!--Box 3-->
+    <div class="box">
+        <h3>Friday</h3>
+        <img src="assets/some_clouds.png" alt="imagen-clima"/>
+        <p>some clouds</p>
+        <div class="tempatures">
+            <div class="highT" id="temp5">21</div>
+            <div class="lowT" id="temp6">16</div>
+        </div>
+    </div>
+    <!--Box 4-->
+    <div class="box">
+        <h3>Saturday</h3>
+        <img src="assets/some_sun.png" alt="imagen-clima"/>
+        <p>some sun</p>
+        <div class="tempatures">
+            <div class="highT" id="temp7">26</div>
+            <div class="lowT" id="temp8">21</div>
+        </div>
+    </div>    
+    </div>
+    <!--Message-->
+    <div class="message">
+        <img src="assets/cookie.png" alt="imagen-cookie">
+        <div>
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="acceptBtn(this)">I accept</button>
+    </div>
     <!--Script-->
     <script src="js/script.js"></script>
 </body>
